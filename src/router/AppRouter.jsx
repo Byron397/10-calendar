@@ -1,6 +1,13 @@
+import { Routes } from "react-router-dom"
 
 export const AppRouter = () => {
-  return (
-    <div>AppRouter</div>
+    
+    const authStatus = 'not-authenticated';
+    return (
+    <Routes>
+        {
+            (authStatus === 'not-authenticated')
+        }
+    </Routes>
   )
 }
